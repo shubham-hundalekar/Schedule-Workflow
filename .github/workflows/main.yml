@@ -3,6 +3,8 @@ name: Schedule Workflow
 on:
   schedule:
     - cron: "0 0 * * *"
+  push:
+    branches: [main]
 
 jobs:
   run-script:
